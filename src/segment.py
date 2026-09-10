@@ -11,24 +11,26 @@ lines = []
 
 for page in pages:
     transcript_page = page["transcript_page"]
-    raw_lines = page["text"].splitlines()
+
+    if transcript_page < 6 or transcript_page > 87:
+        continue
 
     current_line = None
     current_text = []
 
-    for raw in raw_lines:
-        text = raw.strip()
+    for raw_line in page["text"].splitlines():
+        raw_line = raw_line.strip()
+        raw_line = re.sub(r"\s+\d{2}:\d{2}$", "", raw_line)
 
-        if not text:
+        if not raw_line:
             continue
 
-        page_match = re.fullmatch(r"Page\s+\d+", text, re.IGNORECASE)
-        if page_match:
+        if raw_line.startswith("Page "):
             continue
 
-        line_match = re.fullmatch(r"\d{1,2}", text)
+        match = re.fullmatch(r"\d{1,2}", raw_line)
 
-        if line_match:
+        if match:
             if current_line is not None and current_text:
                 lines.append({
                     "page": transcript_page,
@@ -36,12 +38,11 @@ for page in pages:
                     "text": " ".join(current_text)
                 })
 
-            current_line = int(text)
+            current_line = int(raw_line)
             current_text = []
-            continue
-
-        if current_line is not None:
-            current_text.append(text)
+        else:
+            if current_line is not None:
+                current_text.append(raw_line)
 
     if current_line is not None and current_text:
         lines.append({
