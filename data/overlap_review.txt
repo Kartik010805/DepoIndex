@@ -1,0 +1,585 @@
+
+====================================================================================================
+Topics 2 and 3
+Range: 11:2 -> 14:12
+====================================================================================================
+[11:2] Q    You are an attorney; correct?
+[11:3] A    That is correct.
+[11:4] Q    As a matter of fact, why don't we go into your
+[11:5] CV.  I'm going to scroll right down to it and -- there we
+[11:6] go.
+[11:7] So here on the screen I'll be able to turn to
+[11:8] things, and I'll be able to manipulate them.  You know,
+[11:9] see how I can do this with your CV here on -- on
+[11:10] Exhibit 1?  So if at any point you need to see more or --
+[11:11] or -- or in order to answer something you need to see a
+[11:12] different part of your report, let me know.  But also,
+[11:13] since you have it in front of you, I assume you'll be able
+[11:14] to kind of work around that pretty well.  So I'm -- I'm
+[11:15] just going to go do a little bit of "this is your life"
+[11:16] with you, Ms. Yu.
+[11:17] A    Okay.
+[11:18] Q    You currently are the student -- the
+[11:19] deputy executive director of the
+[11:20] Student Borrower Protection Center.
+[11:21] What -- what is that?
+[11:22] A    The Student Borrower Protection Center is a
+[11:23] National 501(c)(3) organization.  We work on issues
+[11:24] related to student lending and student borrowing, with the
+[11:25] goal of alleviating the burden of student debt from our
+[12:1] national economy.
+[12:2] Q    Thank you.
+[12:3] Bullet Point 1 sort of says a little bit about
+[12:4] your duties there, and it mentions that you're trying to
+[12:5] execute SBPB's policy agenda.
+[12:6] What is the policy agenda?
+[12:7] A    So we have a number of issues that we are
+[12:8] advocating for.  We work on issues related to the student
+[12:9] loan safety net and insuring that federal student loan
+[12:10] borrowers have adequate protections in the federal student
+[12:11] loan safety net.
+[12:12] We also work on issues of racial equity to -- to
+[12:13] both examine the marketplace and determine what
+[12:14] discrimination occurs in the marketplace and to identify
+[12:15] that discrimination and to suggest remedies and ways to
+[12:16] make the system more fair for borrowers of all races.
+[12:17] We also work on issues related to predatory
+[12:18] student lending.  And particularly in the private student
+[12:19] loan market, we also look -- examine the practices of
+[12:20] schools across the country and how they result in -- how
+[12:21] their practices result in their students and their
+[12:22] students' families going into debt.
+[12:23] Q    Thank you.
+[12:24] The second bullet point states that it is a
+[12:25] national leader in the campaign to cancel student loan
+[13:1] debt.
+[13:2] When -- when you reference there "canceling
+[13:3] student loan debt," what do you mean?
+[13:4] A    That is referencing a national campaign that is
+[13:5] ongoing in order to address the burdens of federal student
+[13:6] loan debt as it regards to the COVID-19 pandemic, and the
+[13:7] current policy debate that is currently pending with
+[13:8] regards to President Biden's program to cancel up to
+[13:9] $20,000 of federal student loans for borrowers across the
+[13:10] country.
+[13:11] Q    Thank you.
+[13:12] The third bullet point talks about leading
+[13:13] initiatives to develop, pass, and implement new
+[13:14] protections for student loan borrowers.
+[13:15] What -- what type of work is -- is that?  Can you
+[13:16] flesh that out a little bit for me?
+[13:17] A    Sure.
+[13:18] So we do a deep analysis of the -- of the
+[13:19] Higher Education Act and other
+[13:20] Consumer Financial Protection laws that are in place
+[13:21] surrounding the student loan market.  We examine both the
+[13:22] practices in the market, as well as the laws, to look for
+[13:23] ways in which it can be improved to be more fair to
+[13:24] student loan borrowers; and then we write policy memos.
+[13:25] We do research, and then present those findings both
+[14:1] publicly and then to policymakers.
+[14:2] Q    And do these initials strive to come up with
+[14:3] standards that lenders should adhere to or schools, or who
+[14:4] are they directed at (verbatim)?
+[14:5] A    Typically, they are directed at regulators.  They
+[14:6] are also directed at both federal policymakers, as well as
+[14:7] state lawmakers, federal agencies, the
+[14:8] Department of Education, the
+[14:9] Consumer Financial Protection Bureau, and in some -- you
+[14:10] know, I -- I imagine that lenders do also read our
+[14:11] materials.
+[14:12] Q    Thank you.
+
+====================================================================================================
+Topics 14 and 15
+Range: 27:1 -> 31:20
+====================================================================================================
+[27:1] Q    Okay.  Thank you.
+[27:2] You provide -- the initial background, you
+[27:3] provide an overview of higher education and for-profit
+[27:4] colleges.  You have some familiarity with the concept of
+[27:5] for-profit colleges in America, I take it?
+[27:6] A    I do.
+[27:7] Q    And there -- there's no law against for-profit
+[27:8] schools; correct?
+[27:9] A    That is correct.
+[27:10] Q    There's no law against making a profit either;
+[27:11] correct?
+[27:12] A    That is correct.
+[27:13] Q    Did you have any firsthand experience with what
+[27:14] the quality of education was like at IT&T -- ITT?
+[27:15] MR. BLOOD:  Did you say firsthand?
+[27:16] MR. PURCELL:  Yes.
+[27:17] THE WITNESS:  I never attended ITT.
+[27:18] BY MR. PURCELL:
+[27:19] Q    Did you -- as -- as part of your -- of your work,
+[27:20] did you ever do anything that analyzed whether -- the --
+[27:21] the level of -- of education there?
+[27:22] A    So the -- so my area of expertise is in student
+[27:23] lending, and so the area that I would've examined with
+[27:24] regards to ITT is with -- with the debt that students
+[27:25] incurred.  So I did -- I -- I have both on individual
+[28:1] level -- I -- I represented individual borrowers and --
+[28:2] who have a -- I've represented a small number of ITT
+[28:3] students; however, my expertise has been looking more
+[28:4] broadly at ITT and about the systemic problems that have
+[28:5] been identified by regulators, by, also, Senate
+[28:6] committees, and so looked systemically at the issues that
+[28:7] have been raised by student loan borrowers in those
+[28:8] contexts and understanding the ways in which ITT has led
+[28:9] students into debt.
+[28:10] Q    Would it be fair to say that your view about ITT,
+[28:11] based on the -- the materials you've reviewed, is that in
+[28:12] many occasions the benefits of an ITT education were
+[28:13] outweighed by the burdens of debt that students took?
+[28:14] A    I'm sorry, can you ask that one more time?
+[28:15] Q    Sure.
+[28:16] Is -- is your view that on many occasions ITT
+[28:17] students received less of a benefit from the education
+[28:18] there than would be commensurate to the amount of student
+[28:19] debt they had to take on?
+[28:20] A    So it is my view -- or let me rephrase that.
+[28:21] Based upon my analysis of the materials that is
+[28:22] in -- both in the public domain and in the reports by ITT
+[28:23] and the reports that I have relied on, what it has shown
+[28:24] is that few students or -- very few students receive the
+[28:25] benefits that are promised to them by ITT which is what
+[29:1] led them to take on the debt in the first place.
+[29:2] Q    So it -- it's not your opinion that an ITT
+[29:3] diploma is worthless; correct?
+[29:4] A    Is...
+[29:5] MR. BLOOD:  Vague.
+[29:6] THE WITNESS:  Well, yeah.  I mean, I think I
+[29:7] don't really understand what you mean when you say that it
+[29:8] is -- is worthless.  I mean, the data suggests that, you
+[29:9] know, folks who attend a school -- that folks who attend a
+[29:10] for-profit college and get a diploma, such as that from
+[29:11] ITT, typically earn less than they did even with just a
+[29:12] high school diploma.
+[29:13] I think beyond that, there's also issues about
+[29:14] whether or not students complete their degree.  ITT and
+[29:15] other for-profit schools have extraordinarily high dropout
+[29:16] rates.
+[29:17] BY MR. PURCELL:
+[29:18] Q    Uh-huh.
+[29:19] A    And so many of the -- a large -- systemically
+[29:20] large number of folks -- even if one were to say that
+[29:21] the -- the degree had value -- which I -- I don't -- what
+[29:22] I know is the data around earnings, and I know about the
+[29:23] data around retention.  I don't -- I'm not in a position
+[29:24] to say about the educational quality, for example.  But
+[29:25] I -- what I can say is about the economic outcomes of
+[30:1] students that attend ITT are typic- -- are -- are
+[30:2] statistically worse than many folks who did not attend
+[30:3] ITT.
+[30:4] BY MR. PURCELL:
+[30:5] Q    Okay.  So I'm just trying to unpack that a little
+[30:6] bit --
+[30:7] A    Sure.
+[30:8] Q    -- because you -- you're talking about
+[30:9] statistics.
+[30:10] So what -- what statistics are you aware of about
+[30:11] how many -- what percentage of ITT students ended up
+[30:12] getting degrees as opposed to those who did not get
+[30:13] degrees?
+[30:14] A    If you'll -- I -- I'm going to refer to my report
+[30:15] because I believe that I have this date.  I believe -- the
+[30:16] Senate HELP Committee looked specifically at ITT and
+[30:17] looked at the retention rates at ITT.
+[30:18] MR. BLOOD:  Ms. Yu, the -- the senate what
+[30:19] committee?  I didn't catch that.
+[30:20] THE WITNESS:  The -- the -- I'm sorry.
+[30:21] The Senate HELP Committee:  Health, Education,
+[30:22] Labor, and Pension Committee.
+[30:23] MR. BLOOD:  Thank you.
+[30:24] THE WITNESS:  They did a report in -- they
+[30:25] released a report in 2012 which was based upon a two-year
+[31:1] investigation into a number of for-profit institutions.
+[31:2] ITT was one of those schools that it investigated.  As a
+[31:3] part of that investigation, it released data regarding the
+[31:4] retention rates of ITT.  And I'm happy, if you'll give me
+[31:5] a moment, to take a look and to pull up that number for
+[31:6] you.
+[31:7] BY MR. PURCELL:
+[31:8] Q    Sure.
+[31:9] A    So it appears that I did not put the exact figure
+[31:10] of the retention rates in -- into my report.  It isn't
+[31:11] documented in the Senate HELP Report.  The other -- the
+[31:12] other metric besides retention that is important to look
+[31:13] at when -- when judging the quality of the degree and the
+[31:14] quality of -- on whether borrowers experienced -- or
+[31:15] students rather experienced a valuable experience is to
+[31:16] look at the default rates at an institution, and so ITT
+[31:17] had a notably high default rate which indicates that --
+[31:18] which is a good indicator that students were not getting
+[31:19] the value from which they -- the value of the education
+[31:20] which they were taking on the loans to get.
+
+====================================================================================================
+Topics 16 and 17
+Range: 31:21 -> 35:8
+====================================================================================================
+[31:21] Q    Okay.  So a couple sort of big-picture questions.
+[31:22] One --
+[31:23] A    Sure.
+[31:24] Q    -- one is just, it -- it is not your opinion that
+[31:25] every degree from ITT was worthless; is that fair?
+[32:1] MR. BLOOD:  Vague.
+[32:2] THE WITNESS:  I have no way of -- of evaluating
+[32:3] every single degree.  What I have is looking at
+[32:4] market-wide data available about the outcomes of ITT
+[32:5] students.
+[32:6] BY MR. PURCELL:
+[32:7] Q    Okay.  How about this:  If there is an ITT
+[32:8] student and they got a degree and made more than twice as
+[32:9] much as they made after graduating from ITT than before
+[32:10] they attended ITT, would you consider that to be an
+[32:11] unusual experience with an ITT student?
+[32:12] MR. BLOOD:  Vague --
+[32:13] THE WITNESS:  Well --
+[32:14] MR. BLOOD:  Vague.  Incomplete hypothetical.
+[32:15] Go ahead.  You can answer.
+[32:16] THE WITNESS:  Sure.
+[32:17] That would be an outlier experience.  If a -- if
+[32:18] a student were to graduate and -- and -- I'm sorry, I
+[32:19] don't remember the details of your hypothetical.
+[32:20] (Simultaneous speakers.)
+[32:21] BY MR. PURCELL:
+[32:22] Q    Sure.  I'll go back and ask it more simply --
+[32:23] A    Sure.
+[32:24] Q    -- with -- with the benefit of your answer.
+[32:25] So you're saying it would -- it would be atypical
+[33:1] if an ITT student graduated with a degree and also made
+[33:2] twice as much, if not more, than they made prior to
+[33:3] attending ITT after getting the -- the degree.
+[33:4] That would be atypical; correct?
+[33:5] MR. BLOOD:  Incomplete hypothetical.
+[33:6] Go ahead.
+[33:7] THE WITNESS:  So I think -- I mean, I think
+[33:8] still -- I -- I think the words that I used before would
+[33:9] still apply.  It would be an outlier.  And I think that
+[33:10] there's a number of different factors that one would
+[33:11] consider.
+[33:12] I mean, I know -- there's a -- there's a number
+[33:13] of different factors that go into the exact salary that
+[33:14] someone makes after attending a school.  Many of them have
+[33:15] very little to do with the school itself.  However -- so
+[33:16] that's why I think it's important to look at the aggregate
+[33:17] field and to look big-picture at what is happening
+[33:18] throughout the field.
+[33:19] Is there a single student who may wind up doing
+[33:20] better?  Sure.  But that student may have done better
+[33:21] without the degree from ITT regardless, which is why
+[33:22] individual anecdotes are not necessarily instructive of
+[33:23] what is happening in the field.  I think what's more
+[33:24] instructive is to look at these big-picture, you know,
+[33:25] graduation rates, retention rates.  The rates of -- of
+[34:1] default, for example.
+[34:2] So yes, there are -- there are going to be
+[34:3] example of students who make decent salaries, but that is
+[34:4] not necessarily an indication.  You have to look instead
+[34:5] rather at the bigger picture of what's -- what's happening
+[34:6] across the field.
+[34:7] BY MR. PURCELL:
+[34:8] Q    Sure.
+[34:9] But when you -- when you've used the -- the term
+[34:10] "outlier" -- and you've used it a couple times -- what do
+[34:11] you mean by that?
+[34:12] A    It is not the typical experience.  The typical
+[34:13] experience is that ITT was a -- was a notoriously bad
+[34:14] institution that -- that used, you know,
+[34:15] flagrant misrepresentations about the quality of
+[34:16] education --
+[34:17] (Simultaneous speakers.)
+[34:18] THE REPORTER:  I'm sorry, I'm sorry, you need to
+[34:19] slow down a little bit, Ms. Yu.  The -- I lost you after
+[34:20] "flagrant."
+[34:21] MR. BLOOD:  Flagrant misrepresentations.
+[34:22] THE WITNESS:  Flagrant misrepresentations, thank
+[34:23] you.
+[34:24] So, you know, I -- I -- I think what is more
+[34:25] important to recognize is that across the field ITT is
+[35:1] known for misrepresenting the quality of its education,
+[35:2] the value of its degree, the job placement rates.  It is
+[35:3] known for misrepresenting the -- the salaries that its
+[35:4] former students receive upon completion.
+[35:5] And so I think those are the more important
+[35:6] pieces of data to look at when we're analyzing the quality
+[35:7] of the institution and the practices; more importantly,
+[35:8] the practices of the institution.
+
+====================================================================================================
+Topics 18 and 19
+Range: 35:11 -> 37:1
+====================================================================================================
+[35:11] And with respect to misrepresenting the -- the
+[35:12] benefits of an ITT education, for example --
+[35:13] A    Yes.
+[35:14] Q    -- are you aware of any of the Vervent defendants
+[35:15] being involved in that practice by ITT?
+[35:16] A    The -- I'm sorry, can you ask that --
+[35:17] Q    Sure.
+[35:18] In terms of making misrepresentations to students
+[35:19] about the benefits of attending ITT, are you aware of any
+[35:20] of the Vervent defendants being involved in making those
+[35:21] sorts of misrepresentations?
+[35:22] A    The Vervent -- I am not aware of the Vervent
+[35:23] representatives making the -- those representations
+[35:24] themselves; however, they certainly would have been aware
+[35:25] of those representations when they were asking students to
+[36:1] make payments on loans that were taken out based upon
+[36:2] those representations.
+[36:3] Q    How do you know the loans were taken out based on
+[36:4] the misrepresentation?
+[36:5] A    Their --
+[36:6] (Simultaneous speakers.)
+[36:7] Q    -- talking about?
+[36:8] A    So the representations, certainly there's --
+[36:9] there are numerous sources that cite to misrepresentations
+[36:10] with regard specifically to the financing of the
+[36:11] education.  So we see this both in the
+[36:12] Senate HELP Committee Report, for example.  They discuss
+[36:13] misrepresentations within ITT's practices.  We also see
+[36:14] this again in the Consumer Financial Protection Bureau's
+[36:15] complaint in the -- in the investigation and the report of
+[36:16] the investigation by the
+[36:17] Consumer Financial Protection Bureau which outlines not
+[36:18] only its own investigations but ITT's investigations with
+[36:19] regards to secret shoppers who were asked to go in posing
+[36:20] as students and reported then their experiences about both
+[36:21] the quality of the education, the value of the
+[36:22] accreditation, and the job placement rates in --
+[36:23] So those are all evidence that I -- the defendant
+[36:24] Vervent would've had access to when -- when communicating
+[36:25] with borrowers about their loans that were made with
+[37:1] regards to ITT.
+
+====================================================================================================
+Topics 20 and 21
+Range: 37:23 -> 42:4
+====================================================================================================
+[37:23] Q    We were talking a bit about what benefits
+[37:24] somebody might've gotten from an ITT degree.
+[37:25] Would it be fair to say that if somebody went to
+[38:1] ITT, got a degree, and then made quite a bit more than
+[38:2] they made prior to attending ITT, that they would've
+[38:3] gotten more of a benefit than was typical for an ITT
+[38:4] student?
+[38:5] MR. BLOOD:  Vague.  Incomplete hypothetical.
+[38:6] THE WITNESS:  I think also -- I mean, as -- as we
+[38:7] were discussing before, that you can't draw a direct
+[38:8] correlation between the salary that someone earns
+[38:9] afterwards than to -- directly to that degree.  But I
+[38:10] think to the point you're making, most people did not --
+[38:11] most -- most people did not get value from their ITT
+[38:12] degrees, if they completed at all.
+[38:13] BY MR. PURCELL:
+[38:14] Q    Thank you.
+[38:15] So if somebody did get a degree and then made
+[38:16] twice as much, if not more, money after graduating than
+[38:17] they were making prior to attending ITT, they would be
+[38:18] "outliers"; correct, to use your term?
+[38:19] MR. BLOOD:  Same objections.
+[38:20] THE WITNESS:  Based upon the -- the available
+[38:21] data, yes, that the typical borrower did not make its -- I
+[38:22] mean, I guess part of the problem with the question is
+[38:23] also we -- I don't have any information about what this
+[38:24] hypothetical borrower was making prior to when they
+[38:25] started at ITT.  So I suppose that --
+[39:1] BY MR. PURCELL:
+[39:2] Q    (Unintelligible response.)
+[39:3] A    Let me -- let me -- yeah, let me not answer the
+[39:4] question because I think that piece of information is
+[39:5] important, that if someone's not making any money and they
+[39:6] make twice as much, then --
+[39:7] (Simultaneous speakers.)
+[39:8] Q    Ms. Yu, (unintelligible) --
+[39:9] THE REPORTER:  I'm sorry, guys, guys, guys, guys,
+[39:10] I'm sorry, I'm losing you guys.
+[39:11] BY MR. PURCELL:
+[39:12] Q    Ms. Yu, this -- that was part of the
+[39:13] hypothetical.  So that -- so I'm going to have to ask it
+[39:14] again.
+[39:15] A    Okay.
+[39:16] Q    If there's an ITT student and they, A, got a
+[39:17] degree and, B, they made more than twice after graduating
+[39:18] from ITT than they made before attending ITT, they would
+[39:19] be an outlier; correct?
+[39:20] MR. BLOOD:  Incomplete hypothetical.  Vague.
+[39:21] Go ahead.
+[39:22] THE WITNESS:  Yeah, I mean, the problem -- the
+[39:23] problem with the question is that I don't have any data
+[39:24] about what you're saying that the -- the borrower -- this
+[39:25] borrower made prior to attending ITT.  So that's -- I
+[40:1] think -- I can't answer the question with the information
+[40:2] that you've given me.
+[40:3] BY MR. PURCELL:
+[40:4] Q    Ms. Yu, when I say that they made twice as much
+[40:5] as they made after graduating than they made before, how
+[40:6] is that not giving you information?
+[40:7] A    Because if somebody was not working or worked
+[40:8] very part-time and made twice as much money, they may
+[40:9] have -- that -- that may or may not be -- right -- but
+[40:10] like it's a spectrum, and what you're asking me is to
+[40:11] place -- I mean, the starting point -- without knowing the
+[40:12] starting point, I can't give an opinion about the ending
+[40:13] point and how typical that is, given the size of the
+[40:14] portfolio.
+[40:15] People enter with a wide range of salaries.  Many
+[40:16] folks are unemployed when they enter, many folks are
+[40:17] underemployed, some people have full employment
+[40:18] afterwards, and so --
+[40:19] Q    Okay.
+[40:20] A    -- it's not necessary -- like what their -- what
+[40:21] their salary is in relationship prior to entering school
+[40:22] and afterwards is not really I think necessarily
+[40:23] instructive without more information.
+[40:24] Q    Okay.  How about if there was somebody who, prior
+[40:25] to attending ITT, made minimum wage, and let's call that
+[41:1] between 10 and $15 an hour; went to ITT; got a degree;
+[41:2] after graduating from ITT, got a job making $80,000 a
+[41:3] year.
+[41:4] Would that person be an outlier in your
+[41:5] experience?
+[41:6] MR. BLOOD:  Same objections.
+[41:7] THE WITNESS:  So $80,000 is significantly more
+[41:8] than the average starting salary of a -- of a recent
+[41:9] graduate from ITT.
+[41:10] BY MR. PURCELL:
+[41:11] Q    Okay.  But can you please answer my question?
+[41:12] And this'll go so much faster if you'll answer my
+[41:13] question.  You're free to say anything you want, but
+[41:14] you're -- you're -- you're not like actually answering the
+[41:15] question.
+[41:16] So the question is:  Would -- would that person,
+[41:17] who we've now in a laborious process given you all the
+[41:18] detail you need, they started off, they're making 10, $15
+[41:19] an hour; they -- before going to ITT; they attend ITT
+[41:20] afterwards; shortly after graduating, they're making
+[41:21] $80,000 an hour -- $80,000 a year.
+[41:22] Is that person an outlier and not typical of an
+[41:23] ITT graduate?
+[41:24] MR. BLOOD:  Same objection.
+[41:25] THE WITNESS:  And based -- and my -- my answer is
+[42:1] the same.  Based upon the data that is available, that
+[42:2] that is not the typical experience of an ITT graduate.
+[42:3] BY MR. PURCELL:
+[42:4] Q    Thank you.
+
+====================================================================================================
+Topics 28 and 29
+Range: 55:14 -> 60:1
+====================================================================================================
+[55:14] Q    Do you believe that there was a wide-scale
+[55:15] failure to provide the PEAKS borrowers with the final
+[55:16] disclosures required by law with respect to their loans?
+[55:17] A    I don't have access to the information that
+[55:18] borrowers were provided at the time.  What I have -- the
+[55:19] information that I have is that in the records those --
+[55:20] those further disclosures do not exist and were not
+[55:21] provided to the defendants.
+[55:22] Q    Okay.  Do you -- but I'm asking, what -- what is
+[55:23] your opinion about whether or not they were actually sent
+[55:24] to the borrowers?
+[55:25] A    I don't --
+[56:1] MR. BLOOD:  Vague (unintelligible).
+[56:2] THE REPORTER:  I'm sorry, I didn't hear that,
+[56:3] Mr. Blood.
+[56:4] MR. BLOOD:  Vague as to "they."
+[56:5] BY MR. PURCELL:
+[56:6] Q    The final disclosures.  What is your opinion as
+[56:7] to whether or not the final disclosures were sent to the
+[56:8] PEAKS borrowers?
+[56:9] A    That is outside the scope of -- of -- of -- of my
+[56:10] report and not -- not what I was asked to review or had
+[56:11] access to information about.
+[56:12] Q    I believe in your report you -- you state that if
+[56:13] these disclosures were not made, the loans would be
+[56:14] invalid and the borrowers would have the right to cancel
+[56:15] the loans; is that correct?
+[56:16] A    Yes, that's -- that's correct.  That sounds like
+[56:17] something I would say.  I don't --
+[56:18] Q    Okay.  So a couple questions here.
+[56:19] How long after a borrower has failed to receive
+[56:20] the final disclosures would they have the right to cancel
+[56:21] the loan?
+[56:22] A    Let me verify.  But if a -- if a borrower never
+[56:23] receives the final disclosure -- so the -- the right to
+[56:24] cancel the loan begins when the consumer receives the
+[56:25] final disclosure.  And so if the borrower never receives
+[57:1] the final disclosure, then they have an infinite right to
+[57:2] cancel up until the point -- up until three days in which
+[57:3] they receive that disclosure.
+[57:4] Q    Thank you.
+[57:5] And when you say cancel the loan, is what would
+[57:6] happen there be that the -- the loan would be canceled,
+[57:7] any amounts that either the student or the school received
+[57:8] would go back to the lender, and then any obligations
+[57:9] under the loan agreement would no longer exist?
+[57:10] Is that what canceling the loan would be?
+[57:11] A    Sorry, can you say -- can you say that chain of
+[57:12] events one more time?
+[57:13] Q    Sure thing.
+[57:14] A    I'm going to write it down to --
+[57:15] Q    Sure.
+[57:16] Under the right to cancel the loan because of a
+[57:17] failure to receive the disclosures, would that mean that
+[57:18] the loan is canceled and if any funds went to either the
+[57:19] student or the school, they would be returned to the
+[57:20] lender, and then any obligations under the loan agreement
+[57:21] that the student would have would no longer exist.
+[57:22] Is that what canceling the -- the loan would be?
+[57:23] A    That sounds right.
+[57:24] Q    Okay.  And if a loan was faulty because of a
+[57:25] failure to make disclosures at the beginning of the loan,
+[58:1] then that would be the case right at the time the --
+[58:2] the -- the loan was supposed to be originated; correct?
+[58:3] MR. BLOOD:  Vague.
+[58:4] THE WITNESS:  I -- I'm sorry, I don't understand
+[58:5] your question.
+[58:6] BY MR. PURCELL:
+[58:7] Q    Sure thing.
+[58:8] Let's say that these PEAKS loans -- the ones that
+[58:9] were originated in 2010, let's say they -- they were
+[58:10] originated in March of 2010 and no disclosures were made,
+[58:11] then they would be unenforceable loans at what point in
+[58:12] time?  Right away?  A month into it?  When -- when would
+[58:13] they be unenforceable?
+[58:14] A    I mean, if no loan exists, then it can't -- like
+[58:15] no loan could be -- could exist without the disclosures,
+[58:16] and so you -- so I mean, I -- I guess one of the -- it's
+[58:17] not a loan.  It's not enforceable because it's not a loan
+[58:18] if the disclosures have not been made.  You have no
+[58:19] evidence that -- I mean, I guess one of the things, you
+[58:20] have no evidence that money was ever paid to the school.
+[58:21] And so under that -- that loan -- that loan would not
+[58:22] exist, I guess, is -- is my answer.
+[58:23] Q    Okay.  But what if -- what if there was a loan
+[58:24] and there's a record that the school got the money?  Let's
+[58:25] say it's a $20,000 loan and ITT has records that they --
+[59:1] they have the money and that the borrower doesn't even
+[59:2] deny that.  But let's say that disclosure was never made,
+[59:3] they never -- the -- the borrower never received it.  So
+[59:4] that loan did get paid to the school; it's just that the
+[59:5] borrower never received the disclosure.
+[59:6] And according to what you're saying, that -- that
+[59:7] student would -- would have the right to cancel that loan
+[59:8] whenever; correct?
+[59:9] MR. BLOOD:  Incomplete hypothetical.
+[59:10] You can answer.
+[59:11] THE WITNESS:  Yes, they would have to right to
+[59:12] cancel that loan if they never received the disclosure.
+[59:13] BY MR. PURCELL:
+[59:14] Q    And is there some sort of grace period for how
+[59:15] long they get to receive the disclosure?
+[59:16] A    There's -- I believe that there is a time
+[59:17] period -- I'm not remembering it off the top of my head --
+[59:18] of how much time they are -- that is supposed to last
+[59:19] between the various disclosures.
+[59:20] Q    Is it -- can you give me a range?  Is it three
+[59:21] weeks or three months?  Or do you know?
+[59:22] A    I don't -- I -- I don't remember.  It's not three
+[59:23] months.
+[59:24] Q    It's less than that?
+[59:25] A    I would believe that it is less than that, but I
+[60:1] don't remember off the top of my head.

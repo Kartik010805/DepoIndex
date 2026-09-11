@@ -1,0 +1,360 @@
+[
+  {
+    "topic": "Scope of Expert Retention and Testimony",
+    "start_page": 8,
+    "start_line": 24,
+    "end_page": 10,
+    "end_line": 4,
+    "evidence": "The witness discusses being retained as an expert witness and details the scope of her expected trial testimony regarding ITT Institute, the 90/10 rule, and PEAKS loan program documents as outlined in her expert report.",
+    "source_chunks": [
+      1
+    ]
+  },
+  {
+    "topic": "Witness Professional Background and CV",
+    "start_page": 11,
+    "start_line": 2,
+    "end_page": 14,
+    "end_line": 12,
+    "evidence": "Counsel begins questioning the witness regarding her background as an attorney and transitions to reviewing her curriculum vitae.",
+    "source_chunks": [
+      1,
+      2
+    ]
+  },
+  {
+    "topic": "Overview of student loan policy research and target audiences",
+    "start_page": 13,
+    "start_line": 18,
+    "end_page": 14,
+    "end_line": 11,
+    "evidence": "The witness describes analyzing higher education and consumer protection laws, drafting policy memos, and directing initiatives toward regulators, policymakers, and government agencies.",
+    "source_chunks": [
+      3
+    ]
+  },
+  {
+    "topic": "Successful policy and regulatory initiatives",
+    "start_page": 14,
+    "start_line": 13,
+    "end_page": 16,
+    "end_line": 14,
+    "evidence": "The witness details specific successful policy efforts, including debt cancellation advocacy, income-driven repayment rules, Department of Education rulemaking negotiations, tax exemptions on canceled loans, and CARES Act provisions.",
+    "source_chunks": [
+      3
+    ]
+  },
+  {
+    "topic": "Initiatives and comments regarding student loan servicers",
+    "start_page": 16,
+    "start_line": 16,
+    "end_page": 17,
+    "end_line": 17,
+    "evidence": "The witness discusses submitting public comments, participating in RFIs, and advocating for consumer protections in Department of Education contracts with student loan servicers.",
+    "source_chunks": [
+      3
+    ]
+  },
+  {
+    "topic": "Comments on Department of Education Student Loan Servicing Contracts",
+    "start_page": 16,
+    "start_line": 23,
+    "end_page": 18,
+    "end_line": 2,
+    "evidence": "The witness details providing input, comments, and listening session feedback regarding consumer protections, oversight, and administrative requirements for federal student loan servicing contracts.",
+    "source_chunks": [
+      4
+    ]
+  },
+  {
+    "topic": "Witness Professional Background and Experience in Loan Servicing",
+    "start_page": 18,
+    "start_line": 4,
+    "end_page": 19,
+    "end_line": 14,
+    "evidence": "The questioning covers the witness's work history, legal aid background, research at the National Consumer Law Center, and testimony before congressional committees on student loan servicing.",
+    "source_chunks": [
+      4
+    ]
+  },
+  {
+    "topic": "Experience and Knowledge Regarding Loan Portfolio Transfers Between Servicers",
+    "start_page": 19,
+    "start_line": 15,
+    "end_page": 20,
+    "end_line": 20,
+    "evidence": "The witness discusses past instances and examples of student loan portfolio transfers between servicers, including transitions involving Navient, Aidvantage, PHEAA, and Mohela.",
+    "source_chunks": [
+      4
+    ]
+  },
+  {
+    "topic": "Student Loan Servicing Transfers, Process Risks, and Regulations",
+    "start_page": 20,
+    "start_line": 5,
+    "end_page": 24,
+    "end_line": 18,
+    "evidence": "The witness discusses student loan servicer market transfers, borrower risks during transfers, successor servicer practices, and applicable regulations.",
+    "source_chunks": [
+      5,
+      6
+    ]
+  },
+  {
+    "topic": "PEAKS Loan Portfolio Transfer and Regulatory Violations",
+    "start_page": 23,
+    "start_line": 19,
+    "end_page": 24,
+    "end_line": 2,
+    "evidence": "Interrogation shifts to the specific PEAKS loan transfer from Access Group to Vervent/First Associates in 2011 and whether regulatory violations occurred.",
+    "source_chunks": [
+      5
+    ]
+  },
+  {
+    "topic": "Deponent's criminal law experience",
+    "start_page": 24,
+    "start_line": 14,
+    "end_page": 25,
+    "end_line": 7,
+    "evidence": "Interrogation regarding deponent's past work and personal experience with criminal law, including a district attorney internship and jury service.",
+    "source_chunks": [
+      6
+    ]
+  },
+  {
+    "topic": "RICO statute experience and report findings",
+    "start_page": 25,
+    "start_line": 8,
+    "end_page": 26,
+    "end_line": 14,
+    "evidence": "Questions concerning deponent's familiarity with RICO in student loan matters and whether the deponent analyzed or offered opinions on a RICO enterprise in the report.",
+    "source_chunks": [
+      6
+    ]
+  },
+  {
+    "topic": "Report paragraph numbering and structure",
+    "start_page": 26,
+    "start_line": 15,
+    "end_page": 26,
+    "end_line": 25,
+    "evidence": "Inquiry regarding the omission of paragraph numbers after paragraph 8 in the deponent's expert report.",
+    "source_chunks": [
+      6
+    ]
+  },
+  {
+    "topic": "Background on for-profit colleges and higher education",
+    "start_page": 27,
+    "start_line": 1,
+    "end_page": 27,
+    "end_line": 7,
+    "evidence": "Questions addressing the report's background overview of higher education and for-profit institutions.",
+    "source_chunks": [
+      6
+    ]
+  },
+  {
+    "topic": "Overview and Analysis of For-Profit Colleges, ITT Student Debt, and Outcomes",
+    "start_page": 27,
+    "start_line": 2,
+    "end_page": 30,
+    "end_line": 12,
+    "evidence": "The witness discusses for-profit colleges, expertise regarding student loan debt at ITT, and the economic outcomes and degree value for ITT students.",
+    "source_chunks": [
+      7
+    ]
+  },
+  {
+    "topic": "ITT student economic outcomes, retention, and default rates",
+    "start_page": 29,
+    "start_line": 19,
+    "end_page": 31,
+    "end_line": 20,
+    "evidence": "Discussion regarding data on ITT students' economic outcomes, retention rates from the Senate HELP Committee report, and student loan default rates.",
+    "source_chunks": [
+      8
+    ]
+  },
+  {
+    "topic": "Valuation of ITT degrees and post-graduation earnings hypotheticals",
+    "start_page": 31,
+    "start_line": 21,
+    "end_page": 33,
+    "end_line": 17,
+    "evidence": "Questioning about whether ITT degrees had value, handling outlier post-graduation income increases, and analyzing aggregate versus individual outcomes.",
+    "source_chunks": [
+      8
+    ]
+  },
+  {
+    "topic": "ITT Graduate Salary Outcomes and Institutional Misrepresentations",
+    "start_page": 32,
+    "start_line": 23,
+    "end_page": 35,
+    "end_line": 8,
+    "evidence": "Discussion regarding whether high salaries for ITT graduates are outliers and how ITT misrepresented education quality, degree value, job placement rates, and graduate earnings.",
+    "source_chunks": [
+      9
+    ]
+  },
+  {
+    "topic": "Vervent Defendants' Awareness of ITT Misrepresentations and Student Loans",
+    "start_page": 35,
+    "start_line": 11,
+    "end_page": 37,
+    "end_line": 22,
+    "evidence": "Questions and answers about whether Vervent defendants were aware of ITT's misrepresentations when collecting loan payments, citing findings from CFPB and Senate committee reports.",
+    "source_chunks": [
+      9,
+      10
+    ]
+  },
+  {
+    "topic": "Value of ITT degrees and post-graduation earnings hypotheticals",
+    "start_page": 37,
+    "start_line": 23,
+    "end_page": 40,
+    "end_line": 2,
+    "evidence": "Counsel questions the witness regarding whether an ITT graduate earning significantly higher post-graduation income would be an outlier, and the witness addresses degree value and data limitations.",
+    "source_chunks": [
+      10
+    ]
+  },
+  {
+    "topic": "Hypothetical regarding ITT graduate salary outcomes and outlier status",
+    "start_page": 39,
+    "start_line": 12,
+    "end_page": 42,
+    "end_line": 4,
+    "evidence": "Discussion questioning whether an ITT graduate increasing their earnings from minimum wage to $80,000 annually represents an outlier compared to typical graduate outcomes.",
+    "source_chunks": [
+      11
+    ]
+  },
+  {
+    "topic": "Vervent defendants' involvement in PEAKS loan origination",
+    "start_page": 42,
+    "start_line": 5,
+    "end_page": 44,
+    "end_line": 12,
+    "evidence": "Questions regarding the timeline of PEAKS loan origination and whether the Vervent defendants were involved prior to taking over servicing responsibilities in late 2011.",
+    "source_chunks": [
+      11,
+      12
+    ]
+  },
+  {
+    "topic": "Legality, Enforceability, and Collection Orders Concerning PEAKS Loans",
+    "start_page": 44,
+    "start_line": 13,
+    "end_page": 46,
+    "end_line": 12,
+    "evidence": "Discussion regarding the witness's opinions on PEAKS loans, legal determinations of enforceability including the CFPB settlement, and orders to cease collections.",
+    "source_chunks": [
+      12
+    ]
+  },
+  {
+    "topic": "Orders and Instructions Regarding PEAKS Loan Collections",
+    "start_page": 45,
+    "start_line": 18,
+    "end_page": 47,
+    "end_line": 4,
+    "evidence": "Witness and counsel discuss whether any court or governmental agency, including during the 2016 ITT bankruptcy, ordered or instructed that collections cease on PEAKS loans prior to the 2020 settlement.",
+    "source_chunks": [
+      13
+    ]
+  },
+  {
+    "topic": "Enforceability of PEAKS Loans and Document Defects",
+    "start_page": 47,
+    "start_line": 5,
+    "end_page": 51,
+    "end_line": 17,
+    "evidence": "Counsel questions the witness about their opinion on whether PEAKS loans were unenforceable, and the witness explains that while determining individual legal enforceability is outside their scope, material defects exist in the loan documentation that raise enforceability questions.",
+    "source_chunks": [
+      13,
+      14
+    ]
+  },
+  {
+    "topic": "Review of Access Group Disclosures and Regulations Regarding Vervent",
+    "start_page": 51,
+    "start_line": 3,
+    "end_page": 52,
+    "end_line": 22,
+    "evidence": "The examination addresses whether the witness reviewed disclosures held by Access Group, regulatory requirements for Vervent to possess disclosures, and the California Student Loan Servicing Law.",
+    "source_chunks": [
+      14
+    ]
+  },
+  {
+    "topic": "Scope of Report Regarding California Loan Servicing Law",
+    "start_page": 52,
+    "start_line": 3,
+    "end_page": 53,
+    "end_line": 9,
+    "evidence": "The witness is asked whether California loan servicing law was reviewed or opined upon in their expert report.",
+    "source_chunks": [
+      15
+    ]
+  },
+  {
+    "topic": "Vervent's Access to PEAKS Loan Documents and Interest Rates",
+    "start_page": 53,
+    "start_line": 13,
+    "end_page": 55,
+    "end_line": 13,
+    "evidence": "Discussion regarding PEAKS loan enforceability and whether Vervent possessed underlying loan documentation showing interest rates versus spreadsheet records.",
+    "source_chunks": [
+      15
+    ]
+  },
+  {
+    "topic": "Final Disclosures Provided to PEAKS Borrowers",
+    "start_page": 55,
+    "start_line": 14,
+    "end_page": 59,
+    "end_line": 7,
+    "evidence": "Questioning regarding whether required final disclosures were provided or sent to PEAKS loan borrowers.",
+    "source_chunks": [
+      15,
+      16
+    ]
+  },
+  {
+    "topic": "Impact of missing disclosures on loan enforceability and right to cancel",
+    "start_page": 58,
+    "start_line": 13,
+    "end_page": 60,
+    "end_line": 1,
+    "evidence": "Discussion regarding whether a loan is enforceable if disclosures were never provided, a borrower's right to cancel, and the timeframe for receiving disclosures.",
+    "source_chunks": [
+      17
+    ]
+  },
+  {
+    "topic": "Post-origination factors, CFPB findings, and loan enforceability",
+    "start_page": 60,
+    "start_line": 2,
+    "end_page": 62,
+    "end_line": 7,
+    "evidence": "Questions regarding events after origination affecting loan enforceability, Consumer Financial Protection Bureau and Department of Education findings, and whether the CFPB settlement found fault with Vervent defendants.",
+    "source_chunks": [
+      17
+    ]
+  },
+  {
+    "topic": "Expert report findings on abusive recruiting and financial aid practices",
+    "start_page": 62,
+    "start_line": 8,
+    "end_page": 62,
+    "end_line": 12,
+    "evidence": "Counsel references page 11 of the witness's report concerning historical evidence of abusive recruiting and financial aid practices.",
+    "source_chunks": [
+      17
+    ]
+  }
+]
