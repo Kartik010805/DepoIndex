@@ -1,0 +1,135 @@
+You are analyzing a legal deposition transcript.
+
+Your task is to identify meaningful discussion topics and topic transitions.
+
+Rules:
+1. Use ONLY information contained in the transcript below.
+2. Do not invent facts, topics, page numbers, or line numbers.
+3. Every topic must have an exact start page/line and end page/line.
+4. Start and end locations must correspond to locations actually present in the supplied transcript.
+5. Ignore routine deposition procedure, introductions, objections, and other material that is not a meaningful substantive topic.
+6. Do not create a separate topic for every question.
+7. Combine consecutive discussion that belongs to the same substantive topic.
+8. A short digression should not automatically create a new topic.
+9. If a topic continues across multiple pages, keep it as one topic when appropriate.
+10. Return chronological topics.
+11. Keep topic labels concise and descriptive.
+12. Provide a short supporting-evidence explanation based only on the transcript.
+
+Return ONLY valid JSON in this format:
+
+{
+  "topics": [
+    {
+      "topic": "Short topic name",
+      "start_page": 0,
+      "start_line": 0,
+      "end_page": 0,
+      "end_line": 0,
+      "evidence": "Brief explanation of the testimony supporting this topic."
+    }
+  ]
+}
+
+Transcript:
+
+[Page 6, Line 22] MR. PURCELL:  My name is John Purcell.  I'm the
+[Page 6, Line 23] noticing attorney.  I represent the defendants in this
+[Page 6, Line 24] case.
+[Page 6, Line 25] MR. BLOOD:  I'm Tim Blood, and I represent the
+[Page 7, Line 11] BY MR. PURCELL:
+[Page 7, Line 12] Q    Good afternoon, Ms. Yu.  My name's John Purcell.
+[Page 7, Line 13] I represent the defendants, and we will hopefully get you
+[Page 7, Line 14] out of here fairly soon.
+[Page 7, Line 15] At the beginning of a deposition, I always make
+[Page 7, Line 16] sure that somebody knows kind of how the process works,
+[Page 7, Line 17] and one of my first questions to do that is to ask you if
+[Page 7, Line 18] you've ever had your deposition taken before.
+[Page 7, Line 19] Have you?
+[Page 7, Line 20] A    I have not.
+[Page 7, Line 21] Q    Okay.  I won't go into a huge amount of detail,
+[Page 7, Line 22] as I imagine you've got a chance to talk to your lawyers,
+[Page 7, Line 23] but we'll get a couple things just said for the record.
+[Page 7, Line 24] One of them is everything you're saying today is made
+[Page 7, Line 25] under penalty of perjury.
+[Page 8, Line 1] Do you understand that?
+[Page 8, Line 2] A    Yes, I do.
+[Page 8, Line 3] Q    You're doing a great job of waiting for my
+[Page 8, Line 4] questions to end before you answer them, and I'll try to
+[Page 8, Line 5] wait for your answer to end before I ask another question.
+[Page 8, Line 6] So that's just a good little thing of discipline for you
+[Page 8, Line 7] and me to try to do.
+[Page 8, Line 8] If I ask you a question and you don't understand
+[Page 8, Line 9] it, please let me know that, and I'll try to ask a better
+[Page 8, Line 10] question.  Your attorneys will, from time to time, make
+[Page 8, Line 11] objections.  Unless they tell you not to answer a
+[Page 8, Line 12] question, you should go ahead and answer the question.
+[Page 8, Line 13] But if, for example, they object because they claim
+[Page 8, Line 14] something's vague and ambiguous and you agree with them,
+[Page 8, Line 15] let me know what you think is vague.  I -- I -- I don't
+[Page 8, Line 16] want to trick you or ask any questions that you don't
+[Page 8, Line 17] understand what I asked.
+[Page 8, Line 18] Another big-picture question, I just want to make
+[Page 8, Line 19] sure there's nothing that keeps you from giving your best
+[Page 8, Line 20] testimony today, health-wise or anything.
+[Page 8, Line 21] A    There -- there is nothing that prevents me from
+[Page 8, Line 22] giving my best testimony today.
+[Page 8, Line 23] Q    Terrific.  Thank you very much.
+[Page 8, Line 24] So you had been retained as an expert in that --
+[Page 8, Line 25] in this case; correct?
+[Page 9, Line 1] A    That's correct.
+[Page 9, Line 2] Q    And what is the understanding of the scope of --
+[Page 9, Line 3] of what you're testifying -- or will be testifying about
+[Page 9, Line 4] at trial?
+[Page 9, Line 5] A    I have been asked to provide context about the --
+[Page 9, Line 6] the school in which these loans were made, and I've been
+[Page 9, Line 7] asked to opine -- sorry, I'm just pulling up a description
+[Page 9, Line 8] here.
+[Page 9, Line 9] I've been asked to provide a historical overview
+[Page 9, Line 10] of the historical practices of the ITT Institute, along
+[Page 9, Line 11] with the for-profit industry and, in particular, with
+[Page 9, Line 12] regards to the 90/10 rules and how this loan fits in with
+[Page 9, Line 13] that.
+[Page 9, Line 14] Further, I've been asked to examine the loan
+[Page 9, Line 15] documents that were used in the PEAKS program in order to
+[Page 9, Line 16] opine on whether or not the defects on those loans would
+[Page 9, Line 17] be clearly discernible to people or parties engaged in any
+[Page 9, Line 18] aspect of student lending.
+[Page 9, Line 19] Q    So thank you.
+[Page 9, Line 20] A couple other questions now.
+[Page 9, Line 21] A    Sure.
+[Page 9, Line 22] THE REPORTER:  I'm sorry, Counsel -- Counsel,
+[Page 9, Line 23] could you sit up a little bit?  I think it might be
+[Page 9, Line 24] cutting you off.
+[Page 9, Line 25] Thank you.
+[Page 10, Line 1] BY MR. PURCELL:
+[Page 10, Line 2] Q    One question is, it appears that you're reading
+[Page 10, Line 3] from something.  I assume that's your expert report?
+[Page 10, Line 4] A    Yes, I have my expert report in front of me.
+[Page 10, Line 5] Q    Terrific.  I'm going to mark that as Exhibit 1 to
+[Page 10, Line 6] this deposition transcript.  In fact, I will try to do
+[Page 10, Line 7] that now.  And then while I do that I will request --
+[Page 10, Line 8] there it is -- I will request that you talk a little
+[Page 10, Line 9] slower, especially when you're reading.  That's a
+[Page 10, Line 10] deposition thing.
+[Page 10, Line 11] When we start reading, sometimes we read so fast
+[Page 10, Line 12] it makes it hard for the court reporter, and also, since
+[Page 10, Line 13] this is being recorded on video, it's a little harder to
+[Page 10, Line 14] follow when -- when you talk really fast; so just a
+[Page 10, Line 15] caution.
+[Page 10, Line 16] And from time to time, I might ask you to slow
+[Page 10, Line 17] down a bit, or your counsel might, or the court reporter
+[Page 10, Line 18] might, and all of us are doing that just to make sure the
+[Page 10, Line 19] record's easy to follow.
+[Page 10, Line 20] Do you understand that?
+[Page 10, Line 21] A    I understand.
+[Page 10, Line 22] Q    Terrific.  Thank you.
+[Page 10, Line 23] (Exhibit 1 was marked for
+[Page 10, Line 24] identification.)
+[Page 11, Line 1] BY MR. PURCELL:
+[Page 11, Line 2] Q    You are an attorney; correct?
+[Page 11, Line 3] A    That is correct.
+[Page 11, Line 4] Q    As a matter of fact, why don't we go into your
+[Page 11, Line 5] CV.  I'm going to scroll right down to it and -- there we
+[Page 11, Line 6] go.
+[Page 11, Line 7] So here on the screen I'll be able to turn to

@@ -1,0 +1,135 @@
+You are analyzing a legal deposition transcript.
+
+Identify meaningful substantive discussion topics and topic transitions.
+
+Rules:
+1. Use ONLY information contained in the transcript.
+2. Do not invent facts or page/line numbers.
+3. Every start and end location must exactly match a supplied transcript location.
+4. Ignore routine deposition procedure and other non-substantive material.
+5. Combine consecutive discussion belonging to the same substantive topic.
+6. Do not create a new topic for a short digression.
+7. Topics may continue across pages.
+8. Pay special attention to whether a topic from the beginning of this chunk is a continuation of an earlier discussion.
+9. Do not force a topic boundary merely because this chunk starts or ends.
+10. Return topics chronologically.
+11. Keep topic labels concise.
+12. Give a short evidence explanation.
+
+Return ONLY valid JSON:
+
+{
+  "topics": [
+    {
+      "topic": "Short topic name",
+      "start_page": 0,
+      "start_line": 0,
+      "end_page": 0,
+      "end_line": 0,
+      "evidence": "Brief supporting explanation."
+    }
+  ]
+}
+
+Transcript:
+
+[Page 10, Line 12] it makes it hard for the court reporter, and also, since
+[Page 10, Line 13] this is being recorded on video, it's a little harder to
+[Page 10, Line 14] follow when -- when you talk really fast; so just a
+[Page 10, Line 15] caution.
+[Page 10, Line 16] And from time to time, I might ask you to slow
+[Page 10, Line 17] down a bit, or your counsel might, or the court reporter
+[Page 10, Line 18] might, and all of us are doing that just to make sure the
+[Page 10, Line 19] record's easy to follow.
+[Page 10, Line 20] Do you understand that?
+[Page 10, Line 21] A    I understand.
+[Page 10, Line 22] Q    Terrific.  Thank you.
+[Page 10, Line 23] (Exhibit 1 was marked for
+[Page 10, Line 24] identification.)
+[Page 11, Line 1] BY MR. PURCELL:
+[Page 11, Line 2] Q    You are an attorney; correct?
+[Page 11, Line 3] A    That is correct.
+[Page 11, Line 4] Q    As a matter of fact, why don't we go into your
+[Page 11, Line 5] CV.  I'm going to scroll right down to it and -- there we
+[Page 11, Line 6] go.
+[Page 11, Line 7] So here on the screen I'll be able to turn to
+[Page 11, Line 8] things, and I'll be able to manipulate them.  You know,
+[Page 11, Line 9] see how I can do this with your CV here on -- on
+[Page 11, Line 10] Exhibit 1?  So if at any point you need to see more or --
+[Page 11, Line 11] or -- or in order to answer something you need to see a
+[Page 11, Line 12] different part of your report, let me know.  But also,
+[Page 11, Line 13] since you have it in front of you, I assume you'll be able
+[Page 11, Line 14] to kind of work around that pretty well.  So I'm -- I'm
+[Page 11, Line 15] just going to go do a little bit of "this is your life"
+[Page 11, Line 16] with you, Ms. Yu.
+[Page 11, Line 17] A    Okay.
+[Page 11, Line 18] Q    You currently are the student -- the
+[Page 11, Line 19] deputy executive director of the
+[Page 11, Line 20] Student Borrower Protection Center.
+[Page 11, Line 21] What -- what is that?
+[Page 11, Line 22] A    The Student Borrower Protection Center is a
+[Page 11, Line 23] National 501(c)(3) organization.  We work on issues
+[Page 11, Line 24] related to student lending and student borrowing, with the
+[Page 11, Line 25] goal of alleviating the burden of student debt from our
+[Page 12, Line 1] national economy.
+[Page 12, Line 2] Q    Thank you.
+[Page 12, Line 3] Bullet Point 1 sort of says a little bit about
+[Page 12, Line 4] your duties there, and it mentions that you're trying to
+[Page 12, Line 5] execute SBPB's policy agenda.
+[Page 12, Line 6] What is the policy agenda?
+[Page 12, Line 7] A    So we have a number of issues that we are
+[Page 12, Line 8] advocating for.  We work on issues related to the student
+[Page 12, Line 9] loan safety net and insuring that federal student loan
+[Page 12, Line 10] borrowers have adequate protections in the federal student
+[Page 12, Line 11] loan safety net.
+[Page 12, Line 12] We also work on issues of racial equity to -- to
+[Page 12, Line 13] both examine the marketplace and determine what
+[Page 12, Line 14] discrimination occurs in the marketplace and to identify
+[Page 12, Line 15] that discrimination and to suggest remedies and ways to
+[Page 12, Line 16] make the system more fair for borrowers of all races.
+[Page 12, Line 17] We also work on issues related to predatory
+[Page 12, Line 18] student lending.  And particularly in the private student
+[Page 12, Line 19] loan market, we also look -- examine the practices of
+[Page 12, Line 20] schools across the country and how they result in -- how
+[Page 12, Line 21] their practices result in their students and their
+[Page 12, Line 22] students' families going into debt.
+[Page 12, Line 23] Q    Thank you.
+[Page 12, Line 24] The second bullet point states that it is a
+[Page 12, Line 25] national leader in the campaign to cancel student loan
+[Page 13, Line 1] debt.
+[Page 13, Line 2] When -- when you reference there "canceling
+[Page 13, Line 3] student loan debt," what do you mean?
+[Page 13, Line 4] A    That is referencing a national campaign that is
+[Page 13, Line 5] ongoing in order to address the burdens of federal student
+[Page 13, Line 6] loan debt as it regards to the COVID-19 pandemic, and the
+[Page 13, Line 7] current policy debate that is currently pending with
+[Page 13, Line 8] regards to President Biden's program to cancel up to
+[Page 13, Line 9] $20,000 of federal student loans for borrowers across the
+[Page 13, Line 10] country.
+[Page 13, Line 11] Q    Thank you.
+[Page 13, Line 12] The third bullet point talks about leading
+[Page 13, Line 13] initiatives to develop, pass, and implement new
+[Page 13, Line 14] protections for student loan borrowers.
+[Page 13, Line 15] What -- what type of work is -- is that?  Can you
+[Page 13, Line 16] flesh that out a little bit for me?
+[Page 13, Line 17] A    Sure.
+[Page 13, Line 18] So we do a deep analysis of the -- of the
+[Page 13, Line 19] Higher Education Act and other
+[Page 13, Line 20] Consumer Financial Protection laws that are in place
+[Page 13, Line 21] surrounding the student loan market.  We examine both the
+[Page 13, Line 22] practices in the market, as well as the laws, to look for
+[Page 13, Line 23] ways in which it can be improved to be more fair to
+[Page 13, Line 24] student loan borrowers; and then we write policy memos.
+[Page 13, Line 25] We do research, and then present those findings both
+[Page 14, Line 1] publicly and then to policymakers.
+[Page 14, Line 2] Q    And do these initials strive to come up with
+[Page 14, Line 3] standards that lenders should adhere to or schools, or who
+[Page 14, Line 4] are they directed at (verbatim)?
+[Page 14, Line 5] A    Typically, they are directed at regulators.  They
+[Page 14, Line 6] are also directed at both federal policymakers, as well as
+[Page 14, Line 7] state lawmakers, federal agencies, the
+[Page 14, Line 8] Department of Education, the
+[Page 14, Line 9] Consumer Financial Protection Bureau, and in some -- you
+[Page 14, Line 10] know, I -- I imagine that lenders do also read our
+[Page 14, Line 11] materials.
+[Page 14, Line 12] Q    Thank you.
