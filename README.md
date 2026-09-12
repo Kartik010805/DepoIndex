@@ -168,7 +168,7 @@ oversight are documented in llm_usage.md.
 The repository intentionally contains multiple meaningful commits rather than a single final commit.
 Meaningful earlier implementation commit:
 fa8730d feat: add transcript chunking and topic extraction pipeline
-Final submission commit SHA: TO BE FILLED AFTER FINAL COMMIT
+Final submission commit SHA: see the final submission commit recorded below
 17. Limitations
 - LLM-generated topic segmentation can vary between runs.
 - Three complete independent LLM runs could not be completed because of available free-tier quota.
