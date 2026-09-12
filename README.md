@@ -97,16 +97,16 @@ not be completed because the available Gemini free-tier request quota was exhaus
 this project does not claim three complete independent LLM runs. This limitation is documented in the validation
 report.
 9. Reliability Measures
- 1. Exact page/line information preserved during extraction
- 2. Transcript cleaning before topic extraction
- 3. Overlapping chunks
- 4. Structured JSON LLM output
- 5. Deterministic provenance validation
- 6. Deterministic candidate merging
- 7. Manual review of 20 entries
- 8. Reproducible manual boundary corrections
- 9. Intermediate result persistence
- 10. Project Structure
+ - Exact page/line information preserved during extraction
+ - Transcript cleaning before topic extraction
+ - Overlapping chunks
+ - Structured JSON LLM output
+ - Deterministic provenance validation
+ - Deterministic candidate merging
+ - Manual review of 20 entries
+ - Reproducible manual boundary corrections
+ - Intermediate result persistence
+ - Project Structure
 DepoIndex/
 |-- src/
 | |-- extract_text.py
