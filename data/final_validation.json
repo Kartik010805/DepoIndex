@@ -1,0 +1,25 @@
+{
+  "total_topics": 43,
+  "passed_topics": 41,
+  "failed_topics": 2,
+  "validation_passed": false,
+  "errors": [
+    {
+      "topic_number": 15,
+      "topic": "Overview and Analysis of For-Profit Colleges, ITT Student Debt, and Outcomes",
+      "errors": [
+        "evidence location 27:3 is outside topic range",
+        "evidence location 27:5 is outside topic range"
+      ]
+    },
+    {
+      "topic_number": 17,
+      "topic": "ITT Graduate Salary Outcomes and Institutional Misrepresentations",
+      "errors": [
+        "evidence location 33:1 is outside topic range",
+        "evidence location 33:3 is outside topic range",
+        "evidence location 33:21 is outside topic range"
+      ]
+    }
+  ]
+}

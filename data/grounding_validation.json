@@ -1,0 +1,22 @@
+{
+  "total_topics": 57,
+  "passed_topics": 55,
+  "failed_topics": 2,
+  "validation_passed": false,
+  "errors": [
+    {
+      "topic_number": 43,
+      "topic": "CFPB findings regarding Vervent defendants and PEAKS loans",
+      "errors": [
+        "invalid end location 69:0"
+      ]
+    },
+    {
+      "topic_number": 46,
+      "topic": "CFPB suit against ITT and PEAKS loans",
+      "errors": [
+        "invalid end location 74:0"
+      ]
+    }
+  ]
+}

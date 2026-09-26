@@ -5,11 +5,11 @@ import json
 # Configuration
 # ============================================================
 
-MERGED_PATH = "data/grounded_merged_topics.json"
+GROUNDED_PATH = "data/grounded_candidate_topics_repaired.json"
 TRANSCRIPT_PATH = "data/lines.json"
 CHUNKS_PATH = "data/chunks.json"
 
-OUTPUT_PATH = "data/merged_validation.json"
+OUTPUT_PATH = "data/grounding_validation_repaired.json"
 
 
 # ============================================================
@@ -18,13 +18,6 @@ OUTPUT_PATH = "data/merged_validation.json"
 
 def location_key(page, line):
     return page * 1000 + line
-
-
-def location_exists(location, valid_locations):
-    return (
-        location["page"],
-        location["line"]
-    ) in valid_locations
 
 
 def location_in_range(location, start, end):
@@ -41,11 +34,11 @@ def location_in_range(location, start, end):
 # ============================================================
 
 with open(
-    MERGED_PATH,
+    GROUNDED_PATH,
     "r",
     encoding="utf-8"
 ) as f:
-    data = json.load(f)
+    grounded_data = json.load(f)
 
 
 with open(
@@ -68,12 +61,12 @@ with open(
 # Valid transcript locations
 # ============================================================
 
-valid_locations = {
+valid_transcript_locations = {
     (
-        item["page"],
-        item["line"]
+        line["page"],
+        line["line"]
     )
-    for item in transcript
+    for line in transcript
 }
 
 
@@ -85,9 +78,7 @@ chunk_locations = {}
 
 for chunk in chunks:
 
-    chunk_locations[
-        chunk["chunk_id"]
-    ] = {
+    chunk_locations[chunk["chunk_id"]] = {
         (
             line["page"],
             line["line"]
@@ -97,29 +88,19 @@ for chunk in chunks:
 
 
 # ============================================================
-# Topics
+# Validate topics
 # ============================================================
 
-topics = data.get(
-    "topics",
-    []
-)
-
-
-# ============================================================
-# Validation
-# ============================================================
+topics = grounded_data.get("topics", [])
 
 errors = []
-
-previous_start = None
-
 passed = 0
 
 
 print()
 print(
-    f"Validating {len(topics)} grounded merged topics..."
+    f"Validating {len(topics)} repaired grounded "
+    f"candidate topics..."
 )
 print()
 
@@ -178,7 +159,7 @@ for index, topic in enumerate(
 
 
     # --------------------------------------------------------
-    # Topic range
+    # Topic boundaries
     # --------------------------------------------------------
 
     start = location_key(
@@ -192,10 +173,6 @@ for index, topic in enumerate(
     )
 
 
-    # --------------------------------------------------------
-    # Start must be before end
-    # --------------------------------------------------------
-
     if start > end:
 
         topic_errors.append(
@@ -204,7 +181,7 @@ for index, topic in enumerate(
 
 
     # --------------------------------------------------------
-    # Start location must exist
+    # Validate start location
     # --------------------------------------------------------
 
     start_location = (
@@ -213,7 +190,7 @@ for index, topic in enumerate(
     )
 
 
-    if start_location not in valid_locations:
+    if start_location not in valid_transcript_locations:
 
         topic_errors.append(
             f"invalid start location "
@@ -222,7 +199,7 @@ for index, topic in enumerate(
 
 
     # --------------------------------------------------------
-    # End location must exist
+    # Validate end location
     # --------------------------------------------------------
 
     end_location = (
@@ -231,7 +208,7 @@ for index, topic in enumerate(
     )
 
 
-    if end_location not in valid_locations:
+    if end_location not in valid_transcript_locations:
 
         topic_errors.append(
             f"invalid end location "
@@ -240,52 +217,7 @@ for index, topic in enumerate(
 
 
     # --------------------------------------------------------
-    # Chronological topic order
-    # --------------------------------------------------------
-
-    if (
-        previous_start is not None
-        and start < previous_start
-    ):
-
-        topic_errors.append(
-            "topics are not in chronological order"
-        )
-
-
-    previous_start = start
-
-
-    # --------------------------------------------------------
-    # Source chunks
-    # --------------------------------------------------------
-
-    source_chunks = topic[
-        "source_chunks"
-    ]
-
-
-    if not isinstance(
-        source_chunks,
-        list
-    ):
-
-        topic_errors.append(
-            "source_chunks is not a list"
-        )
-
-        source_chunks = []
-
-
-    if not source_chunks:
-
-        topic_errors.append(
-            "source_chunks is empty"
-        )
-
-
-    # --------------------------------------------------------
-    # Evidence locations
+    # Validate evidence locations
     # --------------------------------------------------------
 
     evidence_locations = topic[
@@ -302,134 +234,162 @@ for index, topic in enumerate(
             "evidence_locations is not a list"
         )
 
-        evidence_locations = []
-
-
-    if not evidence_locations:
+    elif len(evidence_locations) == 0:
 
         topic_errors.append(
             "no evidence locations"
         )
 
+    else:
 
-    previous_evidence = None
-
-
-    for evidence in evidence_locations:
-
-        # ----------------------------------------------------
-        # Evidence structure
-        # ----------------------------------------------------
-
-        if (
-            not isinstance(evidence, dict)
-            or "page" not in evidence
-            or "line" not in evidence
-        ):
-
-            topic_errors.append(
-                "invalid evidence location format"
-            )
-
-            continue
+        previous_location = None
 
 
-        location = (
-            evidence["page"],
-            evidence["line"]
-        )
+        for evidence in evidence_locations:
 
+            # ----------------------------------------------
+            # Structure
+            # ----------------------------------------------
 
-        # ----------------------------------------------------
-        # Evidence must exist in transcript
-        # ----------------------------------------------------
-
-        if location not in valid_locations:
-
-            topic_errors.append(
-                f"evidence location "
-                f"{evidence['page']}:{evidence['line']} "
-                f"does not exist in transcript"
-            )
-
-
-        # ----------------------------------------------------
-        # Evidence must be inside topic range
-        # ----------------------------------------------------
-
-        if not location_in_range(
-            evidence,
-            start,
-            end
-        ):
-
-            topic_errors.append(
-                f"evidence location "
-                f"{evidence['page']}:{evidence['line']} "
-                f"is outside topic range"
-            )
-
-
-        # ----------------------------------------------------
-        # Evidence should be chronological
-        # ----------------------------------------------------
-
-        current_evidence = location_key(
-            evidence["page"],
-            evidence["line"]
-        )
-
-
-        if (
-            previous_evidence is not None
-            and current_evidence < previous_evidence
-        ):
-
-            topic_errors.append(
-                "evidence locations are not chronological"
-            )
-
-
-        previous_evidence = current_evidence
-
-
-        # ----------------------------------------------------
-        # Evidence must exist in source chunk(s)
-        # ----------------------------------------------------
-
-        found_in_source_chunk = False
-
-
-        for chunk_id in source_chunks:
-
-            if chunk_id not in chunk_locations:
+            if (
+                not isinstance(evidence, dict)
+                or "page" not in evidence
+                or "line" not in evidence
+            ):
 
                 topic_errors.append(
-                    f"unknown source chunk {chunk_id}"
+                    "invalid evidence location format"
                 )
 
                 continue
 
 
-            if location in chunk_locations[
-                chunk_id
-            ]:
-
-                found_in_source_chunk = True
-                break
-
-
-        if not found_in_source_chunk:
-
-            topic_errors.append(
-                f"evidence location "
-                f"{evidence['page']}:{evidence['line']} "
-                f"is not present in any source chunk"
+            location = (
+                evidence["page"],
+                evidence["line"]
             )
 
 
+            # ----------------------------------------------
+            # Must exist in transcript
+            # ----------------------------------------------
+
+            if location not in valid_transcript_locations:
+
+                topic_errors.append(
+                    f"evidence location "
+                    f"{evidence['page']}:{evidence['line']} "
+                    f"does not exist in transcript"
+                )
+
+
+            # ----------------------------------------------
+            # Must be inside topic range
+            # ----------------------------------------------
+
+            if not location_in_range(
+                evidence,
+                start,
+                end
+            ):
+
+                topic_errors.append(
+                    f"evidence location "
+                    f"{evidence['page']}:{evidence['line']} "
+                    f"is outside topic range"
+                )
+
+
+            # ----------------------------------------------
+            # Chronological evidence
+            # ----------------------------------------------
+
+            current_key = location_key(
+                evidence["page"],
+                evidence["line"]
+            )
+
+
+            if (
+                previous_location is not None
+                and current_key < previous_location
+            ):
+
+                topic_errors.append(
+                    "evidence locations are not chronological"
+                )
+
+
+            previous_location = current_key
+
+
+            # ----------------------------------------------
+            # Must belong to source chunk
+            # ----------------------------------------------
+
+            source_chunks = topic[
+                "source_chunks"
+            ]
+
+            found_in_source_chunk = False
+
+
+            for chunk_id in source_chunks:
+
+                if chunk_id not in chunk_locations:
+
+                    topic_errors.append(
+                        f"unknown source chunk {chunk_id}"
+                    )
+
+                    continue
+
+
+                if location in chunk_locations[
+                    chunk_id
+                ]:
+
+                    found_in_source_chunk = True
+                    break
+
+
+            if not found_in_source_chunk:
+
+                topic_errors.append(
+                    f"evidence location "
+                    f"{evidence['page']}:{evidence['line']} "
+                    f"is not present in topic's "
+                    f"source chunk(s)"
+                )
+
+
     # --------------------------------------------------------
-    # Final topic result
+    # Validate source chunks
+    # --------------------------------------------------------
+
+    source_chunks = topic[
+        "source_chunks"
+    ]
+
+
+    if not isinstance(
+        source_chunks,
+        list
+    ):
+
+        topic_errors.append(
+            "source_chunks is not a list"
+        )
+
+    elif len(source_chunks) == 0:
+
+        topic_errors.append(
+            "source_chunks is empty"
+        )
+
+
+    # --------------------------------------------------------
+    # Result
     # --------------------------------------------------------
 
     if topic_errors:
@@ -482,7 +442,7 @@ output = {
 
 
 # ============================================================
-# Save validation report
+# Save report
 # ============================================================
 
 with open(
@@ -509,13 +469,13 @@ print("=" * 60)
 if validation_passed:
 
     print(
-        "MERGED TOPIC VALIDATION: PASS"
+        "GROUNDING VALIDATION: PASS"
     )
 
 else:
 
     print(
-        "MERGED TOPIC VALIDATION: FAIL"
+        "GROUNDING VALIDATION: FAIL"
     )
 
 print("=" * 60)

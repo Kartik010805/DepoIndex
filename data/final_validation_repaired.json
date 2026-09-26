@@ -1,0 +1,267 @@
+{
+  "status": "PASS",
+  "total_topics": 43,
+  "passed": 43,
+  "failed": 0,
+  "input_file": "data\\final_grounded_topics_repaired.json",
+  "results": [
+    {
+      "topic_number": 1,
+      "topic": "Scope of Expert Retention and Testimony",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 2,
+      "topic": "Witness Professional Background and CV",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 3,
+      "topic": "Overview of student loan policy research and target audiences",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 4,
+      "topic": "Successful policy and regulatory initiatives",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 5,
+      "topic": "Initiatives and comments regarding student loan servicers",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 6,
+      "topic": "Witness Professional Background and Experience in Loan Servicing",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 7,
+      "topic": "Experience and Knowledge Regarding Loan Portfolio Transfers Between Servicers",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 8,
+      "topic": "Student Loan Servicing Transfers, Process Risks, and Regulations",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 9,
+      "topic": "Student loan servicing data transfer laws and regulations",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 10,
+      "topic": "PEAKS Loan Portfolio Transfer and Regulatory Violations",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 11,
+      "topic": "Deponent's criminal law experience",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 12,
+      "topic": "RICO statute experience and report findings",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 13,
+      "topic": "Report paragraph numbering and structure",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 14,
+      "topic": "Background on for-profit colleges and higher education",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 15,
+      "topic": "Overview and Analysis of For-Profit Colleges, ITT Student Debt, and Outcomes",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 16,
+      "topic": "Valuation of ITT degrees and post-graduation earnings hypotheticals",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 17,
+      "topic": "ITT Graduate Salary Outcomes and Institutional Misrepresentations",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 18,
+      "topic": "Vervent Defendants' Awareness of ITT Misrepresentations and Student Loans",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 19,
+      "topic": "Sources of evidence regarding ITT misrepresentations",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 20,
+      "topic": "Value of ITT degrees and post-graduation earnings hypotheticals",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 21,
+      "topic": "Vervent defendants' involvement in PEAKS loan origination",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 22,
+      "topic": "Legality, Enforceability, and Collection Orders Concerning PEAKS Loans",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 23,
+      "topic": "Enforceability of PEAKS Loans and Document Defects",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 24,
+      "topic": "Review of Access Group Disclosures and Regulations Regarding Vervent",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 25,
+      "topic": "Scope of Report Regarding California Loan Servicing Law",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 26,
+      "topic": "Vervent's Access to PEAKS Loan Documents and Interest Rates",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 27,
+      "topic": "Final Disclosures Provided to PEAKS Borrowers",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 28,
+      "topic": "Impact of missing disclosures on loan enforceability and right to cancel",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 29,
+      "topic": "Post-origination factors, CFPB findings, and loan enforceability",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 30,
+      "topic": "Expert report findings on abusive recruiting and financial aid practices",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 31,
+      "topic": "Knowledge of ITT's abusive practices and federal loan involvement",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 32,
+      "topic": "CFPB investigations and findings regarding PEAKS program and Vervent defendants",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 33,
+      "topic": "CFPB findings regarding Vervent defendants and PEAKS loans",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 34,
+      "topic": "SEC investigation and findings regarding Vervent defendants",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 35,
+      "topic": "February 2014 CFPB suit against ITT",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 36,
+      "topic": "State attorneys general investigations into ITT",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 37,
+      "topic": "Findings regarding Vervent and ITT by investigators and the Department of Education",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 38,
+      "topic": "Witness's professional background and familiarity with investigations into ITT and PEAKS",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 39,
+      "topic": "Functions of a Loan Servicer",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 40,
+      "topic": "Regulations on Servicing During School Investigations",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 41,
+      "topic": "Enforceability and settlement of PEAKS loans",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 42,
+      "topic": "Enforceability and timeline of PEAKS loans",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "topic_number": 43,
+      "topic": "Vervent defendants' servicing of PEAKS loans",
+      "status": "PASS",
+      "errors": []
+    }
+  ]
+}

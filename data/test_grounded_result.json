@@ -1,0 +1,43 @@
+{
+  "chunk_id": 1,
+  "topics": [
+    {
+      "topic": "Expert Scope and Retention",
+      "start_page": 8,
+      "start_line": 24,
+      "end_page": 9,
+      "end_line": 18,
+      "evidence": "The witness discusses her retention as an expert in the case and explains the scope of her testimony, including providing a historical overview of the ITT Institute, the for-profit industry, the 90/10 rules, and examining loan documents in the PEAKS program.",
+      "evidence_locations": [
+        {
+          "page": 8,
+          "line": 24
+        },
+        {
+          "page": 9,
+          "line": 1
+        },
+        {
+          "page": 9,
+          "line": 2
+        },
+        {
+          "page": 9,
+          "line": 5
+        },
+        {
+          "page": 9,
+          "line": 9
+        },
+        {
+          "page": 9,
+          "line": 14
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "passed": true,
+    "errors": []
+  }
+}
