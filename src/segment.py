@@ -4,53 +4,52 @@ import unicodedata
 
 from nltk.tokenize import RegexpTokenizer
 
+from transcript_integrity import validate_transcript_lines
+
 
 INPUT_PATH = "data/transcript.json"
 OUTPUT_PATH = "data/lines.json"
 
-
-# NLTK tokenizer used for safe whitespace/token normalization.
-# It does not require downloading any NLTK data package.
 tokenizer = RegexpTokenizer(r"\S+")
 
 
 def clean_transcript_text(text):
     """
-    Clean extracted transcript text while preserving its meaning.
-
-    Cleaning includes:
-    - Unicode normalization
-    - removal of leading/trailing whitespace
-    - normalization of repeated whitespace using NLTK
-    - preservation of punctuation and transcript wording
+    Clean extracted transcript text while preserving meaning.
     """
 
     if not text:
         return ""
 
-    # Normalize Unicode characters produced by PDF extraction.
-    text = unicodedata.normalize("NFKC", text)
+    text = unicodedata.normalize(
+        "NFKC",
+        text
+    )
 
-    # Remove leading/trailing whitespace.
     text = text.strip()
 
-    # Normalize whitespace using NLTK tokenization.
     tokens = tokenizer.tokenize(text)
-    text = " ".join(tokens)
 
-    return text
+    return " ".join(tokens)
 
 
-with open(INPUT_PATH, "r", encoding="utf-8") as f:
+with open(
+    INPUT_PATH,
+    "r",
+    encoding="utf-8"
+) as f:
+
     pages = json.load(f)
 
 
 lines = []
 
+
 for page in pages:
+
     transcript_page = page["transcript_page"]
 
-    # Keep only the actual testimony range.
+    # Keep actual testimony pages.
     if transcript_page < 6 or transcript_page > 87:
         continue
 
@@ -59,49 +58,116 @@ for page in pages:
 
     for raw_line in page["text"].splitlines():
 
-        # Clean the extracted PDF line.
-        raw_line = clean_transcript_text(raw_line)
+        raw_line = clean_transcript_text(
+            raw_line
+        )
 
-        # Remove extraction timestamps at the end of a line.
-        raw_line = re.sub(r"\s+\d{2}:\d{2}$", "", raw_line).strip()
+        # Remove timestamp artifacts.
+        raw_line = re.sub(
+            r"\s+\d{2}:\d{2}$",
+            "",
+            raw_line
+        ).strip()
 
         if not raw_line:
             continue
 
-        # Ignore PDF page-header artifacts.
+        # Remove page-header artifacts.
         if raw_line.startswith("Page "):
             continue
 
-        # A standalone number represents a transcript line number.
-        match = re.fullmatch(r"\d{1,2}", raw_line)
+        # Transcript line marker.
+        match = re.fullmatch(
+            r"\d{1,2}",
+            raw_line
+        )
 
         if match:
-            # Save the previous transcript line.
-            if current_line is not None and current_text:
-                lines.append({
-                    "page": transcript_page,
-                    "line": current_line,
-                    "text": " ".join(current_text)
-                })
 
-            current_line = int(raw_line)
+            # Save previous transcript line.
+            if (
+                current_line is not None
+                and current_text
+            ):
+
+                lines.append(
+                    {
+                        "page": transcript_page,
+                        "line": current_line,
+                        "text": " ".join(
+                            current_text
+                        )
+                    }
+                )
+
+            current_line = int(
+                raw_line
+            )
+
             current_text = []
 
         else:
-            # Continuation text belongs to the current transcript line.
+
+            # Continuation text.
             if current_line is not None:
-                current_text.append(raw_line)
 
-    # Save the final transcript line on the page.
-    if current_line is not None and current_text:
-        lines.append({
-            "page": transcript_page,
-            "line": current_line,
-            "text": " ".join(current_text)
-        })
+                current_text.append(
+                    raw_line
+                )
+
+    # Save final line on page.
+    if (
+        current_line is not None
+        and current_text
+    ):
+
+        lines.append(
+            {
+                "page": transcript_page,
+                "line": current_line,
+                "text": " ".join(
+                    current_text
+                )
+            }
+        )
 
 
-with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+# =========================================================
+# INTEGRITY CHECK BEFORE WRITING lines.json
+# =========================================================
+
+integrity_errors = validate_transcript_lines(
+    lines,
+    expected_first_page=6,
+    expected_last_page=87,
+)
+
+
+if integrity_errors:
+
+    print("=" * 60)
+    print("TRANSCRIPT INTEGRITY VALIDATION: FAIL")
+    print("=" * 60)
+
+    for error in integrity_errors:
+        print(f"- {error}")
+
+    raise RuntimeError(
+        "Transcript integrity validation failed. "
+        "Existing data/lines.json was not overwritten."
+    )
+
+
+# =========================================================
+# Write only validated transcript output
+# =========================================================
+
+with open(
+    OUTPUT_PATH,
+    "w",
+    encoding="utf-8"
+) as f:
+
     json.dump(
         lines,
         f,
@@ -110,5 +176,14 @@ with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
     )
 
 
-print(f"Extracted {len(lines)} numbered transcript lines.")
-print(f"Saved to {OUTPUT_PATH}")
+print(
+    f"Extracted {len(lines)} numbered transcript lines."
+)
+
+print(
+    "Transcript integrity validation: PASS"
+)
+
+print(
+    f"Saved to {OUTPUT_PATH}"
+)
