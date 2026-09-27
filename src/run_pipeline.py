@@ -70,7 +70,29 @@ client = genai.Client(api_key=api_key)
 
 def build_prompt(chunk):
 
-    prompt = """
+    metadata = chunk.get("metadata", {})
+
+    witness = metadata.get("witness")
+    matter = metadata.get("matter")
+    deposition_date = metadata.get("deposition_date")
+    examining_attorney = metadata.get("examining_attorney")
+    parties = metadata.get("parties")
+
+    metadata_block = f"""
+DOCUMENT METADATA:
+
+Witness: {witness if witness is not None else "Not available"}
+Matter/Case: {matter if matter is not None else "Not available"}
+Deposition Date: {deposition_date if deposition_date is not None else "Not available"}
+Examining Attorney: {examining_attorney if examining_attorney is not None else "Not available"}
+Parties: {json.dumps(parties, ensure_ascii=False) if parties is not None else "Not available"}
+
+The metadata above comes from the supplied deposition source.
+Do not invent or infer values for fields marked "Not available".
+
+"""
+
+    prompt = metadata_block + """
 You are analyzing a legal deposition transcript.
 
 Your task is to identify meaningful substantive discussion topics
@@ -413,6 +435,22 @@ def validate_llm_result(result, chunk):
 
 
 # ============================================================
+# Build candidate result record
+# ============================================================
+
+def build_candidate_record(chunk, topics):
+    return {
+        "chunk_id": chunk["chunk_id"],
+        "start_page": chunk["start_page"],
+        "start_line": chunk["start_line"],
+        "end_page": chunk["end_page"],
+        "end_line": chunk["end_line"],
+        "metadata": chunk.get("metadata", {}),
+        "topics": topics,
+    }
+
+
+# ============================================================
 # Process chunks
 # ============================================================
 
@@ -493,17 +531,10 @@ for chunk in chunks:
     # --------------------------------------------------------
 
     results.append(
-        {
-            "chunk_id": chunk_id,
-
-            "start_page": chunk["start_page"],
-            "start_line": chunk["start_line"],
-
-            "end_page": chunk["end_page"],
-            "end_line": chunk["end_line"],
-
-            "topics": result.get("topics", [])
-        }
+        build_candidate_record(
+            chunk,
+            result.get("topics", [])
+        )
     )
 
     # --------------------------------------------------------
