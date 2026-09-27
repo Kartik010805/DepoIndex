@@ -7,6 +7,7 @@ import re
 # ============================================================
 
 INPUT_PATH = "data/grounded_candidate_topics_repaired.json"
+METADATA_PATH = "data/metadata.json"
 OUTPUT_PATH = "data/grounded_merged_topics.json"
 
 
@@ -133,6 +134,76 @@ def should_merge(a, b):
 
 
 # ============================================================
+# Metadata helpers
+# ============================================================
+
+def metadata_signature(metadata):
+    """
+    Return a deterministic representation of metadata.
+
+    Missing metadata fields remain None and are not inferred.
+    """
+
+    if metadata is None:
+        metadata = {}
+
+    fields = (
+        "witness",
+        "matter",
+        "deposition_date",
+        "examining_attorney",
+        "parties",
+        "administrative_information",
+    )
+
+    return tuple(
+        (
+            field,
+            json.dumps(
+                metadata.get(field),
+                sort_keys=True,
+                ensure_ascii=False,
+            )
+        )
+        for field in fields
+    )
+
+
+def merge_metadata(a, b):
+    """
+    Preserve metadata when source candidates agree.
+
+    If metadata differs, preserve the first metadata object and
+    create a review reason instead of silently choosing values.
+    """
+
+    metadata_a = a.get("metadata")
+    metadata_b = b.get("metadata")
+
+    if metadata_a is None and metadata_b is None:
+        return {}, None
+
+    if metadata_a is None:
+        return metadata_b, (
+            "Metadata missing from first source candidate"
+        )
+
+    if metadata_b is None:
+        return metadata_a, (
+            "Metadata missing from second source candidate"
+        )
+
+    if metadata_signature(metadata_a) == metadata_signature(
+        metadata_b
+    ):
+        return metadata_a, None
+
+    return metadata_a, (
+        "Metadata conflict between merged source candidates"
+    )
+
+
+# ============================================================
 # Merge two topics
 # ============================================================
 
@@ -160,7 +231,6 @@ def merge_topics(a, b):
         )
     )
 
-
     # --------------------------------------------------------
     # Basic merged topic
     # --------------------------------------------------------
@@ -180,6 +250,19 @@ def merge_topics(a, b):
         )
     }
 
+    # --------------------------------------------------------
+    # Preserve metadata
+    # --------------------------------------------------------
+
+    metadata, metadata_review = merge_metadata(
+        a,
+        b
+    )
+
+    merged["metadata"] = metadata
+
+    if metadata_review:
+        merged["metadata_review"] = metadata_review
 
     # --------------------------------------------------------
     # Preserve source chunks
@@ -202,7 +285,6 @@ def merge_topics(a, b):
     merged["source_chunks"] = sorted(
         source_chunks
     )
-
 
     # --------------------------------------------------------
     # Preserve evidence locations
@@ -227,7 +309,6 @@ def merge_topics(a, b):
                 }
             )
 
-
     for item in b.get(
         "evidence_locations",
         []
@@ -245,7 +326,6 @@ def merge_topics(a, b):
                 }
             )
 
-
     # --------------------------------------------------------
     # Remove duplicate evidence locations
     # --------------------------------------------------------
@@ -258,7 +338,6 @@ def merge_topics(a, b):
         for item in evidence_locations
     }
 
-
     merged["evidence_locations"] = [
         {
             "page": page,
@@ -269,8 +348,29 @@ def merge_topics(a, b):
         )
     ]
 
-
     return merged
+
+
+# ============================================================
+# Attach canonical metadata to every output topic
+# ============================================================
+
+def attach_metadata(topic, metadata):
+    """
+    Attach the canonical deposition metadata to a topic.
+
+    This handles both cases:
+    - topics created by merge_topics()
+    - candidates that pass through without merging
+
+    Existing metadata is preserved when present. Missing metadata
+    is filled only from the extracted metadata.json source.
+    """
+
+    if "metadata" not in topic:
+        topic["metadata"] = metadata
+
+    return topic
 
 
 # ============================================================
@@ -287,11 +387,23 @@ with open(
 
 
 # ============================================================
+# Load canonical deposition metadata
+# ============================================================
+
+with open(
+    METADATA_PATH,
+    "r",
+    encoding="utf-8"
+) as f:
+
+    canonical_metadata = json.load(f)
+
+
+# ============================================================
 # Flatten candidates
 # ============================================================
 
 candidates = []
-
 
 for topic in data.get(
     "topics",
@@ -323,7 +435,6 @@ candidates.sort(
 
 merged = []
 
-
 for candidate in candidates:
 
     if not merged:
@@ -334,9 +445,7 @@ for candidate in candidates:
 
         continue
 
-
     previous = merged[-1]
-
 
     if should_merge(
         previous,
@@ -353,6 +462,17 @@ for candidate in candidates:
         merged.append(
             candidate
         )
+
+
+# ============================================================
+# Ensure every output topic has canonical metadata
+# ============================================================
+
+for topic in merged:
+    attach_metadata(
+        topic,
+        canonical_metadata
+    )
 
 
 # ============================================================
@@ -392,6 +512,28 @@ print(
 print(
     f"Merged topics: "
     f"{len(merged)}"
+)
+
+metadata_review_count = sum(
+    1
+    for topic in merged
+    if "metadata_review" in topic
+)
+
+metadata_count = sum(
+    1
+    for topic in merged
+    if "metadata" in topic
+)
+
+print(
+    f"Metadata review flags: "
+    f"{metadata_review_count}"
+)
+
+print(
+    f"Topics with metadata: "
+    f"{metadata_count}/{len(merged)}"
 )
 
 print()
