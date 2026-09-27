@@ -148,6 +148,24 @@ def topic_similarity(manual, grounded):
 
 
 # ============================================================
+# Metadata helper
+# ============================================================
+
+def propagate_metadata(final_topic, grounded_topic):
+    """
+    Copy metadata from the grounded source into the final topic.
+
+    The grounded metadata is source-derived deposition metadata.
+    Missing values remain missing; nothing is inferred.
+    """
+
+    if "metadata" in grounded_topic:
+        final_topic["metadata"] = grounded_topic["metadata"]
+
+    return final_topic
+
+
+# ============================================================
 # Load files
 # ============================================================
 
@@ -217,7 +235,6 @@ for manual_index, manual_topic in enumerate(
             )
         )
 
-
     # --------------------------------------------------------
     # Sort by similarity
     # --------------------------------------------------------
@@ -229,7 +246,6 @@ for manual_index, manual_topic in enumerate(
         ),
         reverse=True
     )
-
 
     if not candidates:
 
@@ -243,19 +259,13 @@ for manual_index, manual_topic in enumerate(
 
         continue
 
-
     best_score, best_overlap, best_index, best_topic = (
         candidates[0]
     )
 
-
     # --------------------------------------------------------
     # Minimum matching requirements
     # --------------------------------------------------------
-
-    # Topic names should have at least some meaningful
-    # lexical similarity OR the evidence should strongly
-    # identify the same topic.
 
     name_score = text_similarity(
         manual_topic.get("topic", ""),
@@ -266,7 +276,6 @@ for manual_index, manual_topic in enumerate(
         manual_topic.get("evidence", ""),
         best_topic.get("evidence", "")
     )
-
 
     if (
         name_score < 0.15
@@ -288,7 +297,6 @@ for manual_index, manual_topic in enumerate(
 
         continue
 
-
     # --------------------------------------------------------
     # Match accepted
     # --------------------------------------------------------
@@ -296,7 +304,6 @@ for manual_index, manual_topic in enumerate(
     used_grounded.add(
         best_index
     )
-
 
     matches.append(
         {
@@ -327,7 +334,6 @@ for match in matches:
         "grounded_topic"
     ]
 
-
     # --------------------------------------------------------
     # Manual topic is authoritative
     # --------------------------------------------------------
@@ -335,7 +341,6 @@ for match in matches:
     final_topic = dict(
         manual_topic
     )
-
 
     # --------------------------------------------------------
     # Add grounded evidence locations
@@ -353,7 +358,6 @@ for match in matches:
             []
         )
     ]
-
 
     # --------------------------------------------------------
     # Combine source chunks
@@ -380,15 +384,22 @@ for match in matches:
         | grounded_chunks
     )
 
+    # --------------------------------------------------------
+    # Propagate grounded metadata
+    # --------------------------------------------------------
+
+    propagate_metadata(
+        final_topic,
+        grounded_topic
+    )
 
     # --------------------------------------------------------
-    # Metadata
+    # Grounding source
     # --------------------------------------------------------
 
     final_topic[
         "grounding_source"
     ] = "grounded_merged_topics"
-
 
     final_topics.append(
         final_topic
@@ -483,8 +494,18 @@ print(
     f"Final topics: {len(final_topics)}"
 )
 
-print()
+metadata_count = sum(
+    1
+    for topic in final_topics
+    if "metadata" in topic
+)
 
+print(
+    f"Topics with metadata: "
+    f"{metadata_count}/{len(final_topics)}"
+)
+
+print()
 
 if unmatched:
 
